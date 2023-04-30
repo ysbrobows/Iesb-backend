@@ -1,9 +1,11 @@
-﻿using System.IdentityModel.Tokens.Jwt;
+﻿using System.Data.SqlClient;
+using System.IdentityModel.Tokens.Jwt;
 using System.Net;
 using System.Text;
 using Api_iesb_backend.Middlewares;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.VisualStudio.Services.WebApi.Jwt;
 
 namespace Api_iesb_backend.Middlewares
 {
@@ -52,10 +54,18 @@ namespace Api_iesb_backend.Middlewares
                 var jwtToken = (JwtSecurityToken)validatedToken;
                 await _next(context);
             }
-            catch (Exception ex)
+            catch (SqlException ex)
+            {
+                Console.WriteLine("Ocorreu uma exceção do tipo SqlException: " + ex.Message);
+            }
+            catch (ArgumentException ex)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.Unauthorized;
                 await context.Response.WriteAsync("Token inválido.");
+            }
+            catch (Exception ex)
+            {
+                await context.Response.WriteAsync(ex.Message);
             }
         }
     }

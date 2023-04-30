@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ProjetosIesb\\Api-iesb-backend\\Api-iesb-backend.csproj": {}
+    "C:\\ProjetosIesb\\backend\\Api-iesb-backend.csproj": {}
   },
   "projects": {
-    "C:\\ProjetosIesb\\Api-iesb-backend\\Api-iesb-backend.csproj": {
+    "C:\\ProjetosIesb\\backend\\Api-iesb-backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProjetosIesb\\Api-iesb-backend\\Api-iesb-backend.csproj",
+        "projectUniqueName": "C:\\ProjetosIesb\\backend\\Api-iesb-backend.csproj",
         "projectName": "Api-iesb-backend",
-        "projectPath": "C:\\ProjetosIesb\\Api-iesb-backend\\Api-iesb-backend.csproj",
+        "projectPath": "C:\\ProjetosIesb\\backend\\Api-iesb-backend.csproj",
         "packagesPath": "C:\\Users\\Renan-PC\\.nuget\\packages\\",
-        "outputPath": "C:\\ProjetosIesb\\Api-iesb-backend\\obj\\",
+        "outputPath": "C:\\ProjetosIesb\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Renan-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,6 +61,10 @@
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[6.0.1, )"
+            },
+            "Microsoft.VisualStudio.Services.Client": {
+              "target": "Package",
+              "version": "[16.205.1, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
