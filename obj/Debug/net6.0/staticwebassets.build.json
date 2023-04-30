@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "KfimnRoUQTQwTdMmmd3EbevPX1QNKMlaFdaURgTnRCw=",
+  "Source": "Api-iesb-backend",
+  "BasePath": "_content/Api-iesb-backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
